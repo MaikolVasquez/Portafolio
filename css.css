@@ -2,37 +2,58 @@ body{
   background-image: url("./image/fondo.jpg");
   background-attachment: fixed;
 }
-.media img{
+
+.Descripcion{
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap:20px;
+  justify-items:center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.imgaenDescripcion{
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-.media {
-  margin-top: 60px;
-  color: white;
+
+.parrafoDescripcion{
+  justify-content: flex-start;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .parrafos{
   color: white;
-  margin: 60px 5% 20% 40px;
+  display: grid;
+  margin: 50px;
+  padding: 30px;
+  justify-content: center;
+  align-items:center;
 }
 
 .contenedorDiplomas{
   display: flex;
   justify-content: center;
+
 }
 .diplomas{
   display: grid;
   grid-column-gap:30px;
   grid-row-gap: 20px;
   justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 .imgdiploma{
   width: 250px;
   height: 220px;
   border-radius:20px;
 }
+
+
+
 
 @media only screen and (max-width:1040px){
   .diplomas{
@@ -51,6 +72,10 @@ body{
     grid-row-gap: 20px;
     justify-content: space-evenly;
     grid-template-columns: 1fr 1fr;
+  }
+  .parrafos {
+    grid-template-columns: auto;
+    justify-items: center;
   }
 }
 

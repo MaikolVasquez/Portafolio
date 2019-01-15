@@ -10,8 +10,16 @@ body{
   grid-row-gap:20px;
   justify-items:center;
   align-items: center;
-  margin: 20px 20px;
-  padding-right:30px; 
+  margin-top: 50px;
+  padding-right:30px;
+  padding: 70px 70px;
+  background:rgba(0, 0, 0, 0.7);
+
+}
+.fondoDescripcion{
+  background-image: url("./image/fondoDescripcion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imgaenDescripcion{
@@ -61,6 +69,10 @@ body{
   transform: scale(1.2);
 }
 
+.Footer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr)
+}
 
 @media only screen and (max-width:1040px){
   .diplomas{

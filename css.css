@@ -29,7 +29,7 @@ body{
   transition: 1s;
 }
 .imgaenDescripcion:hover{
-  transform: scale(1.02);
+  filter: grayscale(50%);
 }
 
 .parrafoDescripcion{
@@ -71,9 +71,21 @@ body{
 
 .Footer{
   display: grid;
-  grid-template-columns: repeat(5, 1fr)
+  margin: 40px 30px;
+  grid-template-columns: repeat(6, 30px);
+  grid-column-gap: 100px;
+  justify-content:center;
 }
-
+.logo{
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+  transition: 1s;
+}
+.logo:hover{
+  filter: invert(50%);
+  transform: scale(1.2);
+}
 @media only screen and (max-width:1040px){
   .diplomas{
     display: grid;
@@ -97,20 +109,24 @@ body{
     justify-items: center;
   }
 
-.Descripcion{
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.imgaenDescripcion{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.parrafoDescripcion{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
+  .Descripcion{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .imgaenDescripcion{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .parrafoDescripcion{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .Footer{
+    grid-template-columns: repeat(3,30px);
+    grid-row-gap: 20px;
+  }
 }
 
 @media only screen and (max-width:530px){
@@ -127,5 +143,9 @@ body{
   .Descripcion{
     margin-left: 30px;
     margin-right: 30px;
+  }
+  .Footer{
+    grid-template-columns: repeat(2,30px);
+    grid-row-gap: 20px;
   }
 }

@@ -59,6 +59,12 @@ body{
   justify-content: space-evenly;
   grid-template-columns: repeat(4, 1fr);
 }
+
+.carruselBoostrap{
+  margin: 50px;
+  display: none
+}
+
 .imgdiploma{
   width: 250px;
   height: 220px;
@@ -126,6 +132,12 @@ body{
   .Footer{
     grid-template-columns: repeat(3,30px);
     grid-row-gap: 20px;
+  }
+  .contenedorDiplomas{
+    display: none;
+  }
+  .carruselBoostrap{
+    display: block;
   }
 }
 
